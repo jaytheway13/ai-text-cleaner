@@ -1,0 +1,68 @@
+# 🧠 AI Text Cleaner Proje Kaydı
+
+## 🚀 Proje Amacı
+Kullanıcıların yüklediği metin ya da belgelerde ayrımcı ifadeleri tespit edip sansürleyen, yapay zekâ destekli bir web uygulaması.
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Python (Flask)
+- **AI**: OpenAI GPT-3.5 / GPT-4
+- **Ekstralar**: PDF ve DOCX dosya okuma, CORS, .env yapılandırması
+
+---
+
+## ⚙️ Adımlar
+
+1. Python yüklü bilgisayar
+2. `backend/` ve `frontend/` klasörleriyle proje yapısı oluşturuldu
+3. Flask API yazıldı ve OpenAI API'ye bağlandı
+4. `.env` dosyası oluşturularak API key gizlendi
+5. PDF/DOCX dosyaları için `PyPDF2` ve `docx2txt` eklendi
+6. Kullanıcı arayüzü yazıldı
+7. GPT-4 yerine GPT-3.5 kullanılmaya başlandı (erişim hatası nedeniyle)
+8. API kotası hatası alındı → API kullanımının ücretli olduğu fark edildi
+
+---
+
+## 💰 API Kullanım Notları
+
+- OpenAI API **ücretsiz değil**, ücretli faturalandırma gerekir
+- GPT-3.5-Turbo çok düşük ücretlidir (≈ $0.002 / sayfa)
+- Kullanım başına ücret alınır, kullanıcı sayısına göre değil
+
+---
+
+## 📦 Sonuç
+
+Uygulama temel hâliyle çalışır durumda. Kullanıma açmadan önce şu adımlar tamamlanmalı:
+
+- API key'in düzenli faturalandırılması
+- Kota kontrolü ve maliyet izleme
+- İsteğe bağlı: kullanıcı oturumu / rate limit eklemek
+
+---
+
+## 🧠 Sık Sorulan:
+**S: Kullanıcılar siteyi kullandıkça ben mi sürekli kota öderim?**
+
+**C: Evet.**
+Senin OpenAI API hesabın üzerinden tüm istekler geçeceği için, **her istek senin kotandan düşer**. Kullanıcılar sana ait bir altyapıyı kullanır.  
+Yani:
+- 100 kişi girip metin temizlerse,
+- Bu 100 çağrı senin faturan olur.
+
+### 💡 Ne yapılabilir?
+- Belirli kota altında “ücretsiz” sunabilirsin.
+- Gelişmiş kullanım için üyelik / abonelik sistemi kurabilirsin.
+- Her kullanıcıya özel API key tanımlamak mümkün değil (API gizli kalmalı).
+
+---
+
+## 📂 Arşivleme
+
+- Bu dosyayı `ai-text-cleaner-konusma-kaydi.md` olarak kaydedebilirsin.
+- Markdown dosyasını istersen `.pdf` olarak da dışa aktarabilirim (tarayıcıda açıp yazdır → PDF olarak kaydet).
+
